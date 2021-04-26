@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,12 +43,19 @@
                             <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                             Cart
                         </a>
-                    </li>                   
-                    <li>
+                    </li> 
+                    <?php 
+                    if  (isset($_SESSION["loginname"])){
+                        ?>
+                        <li>
                         <a href="/login.php?logout=yes" style="color:aliceblue;" class="btn btn-danger navbar-btn">
                             <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>                          
                         </a>
                     </li>
+                    <?php
+                                        }  
+                                        ?>              
+                   
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->

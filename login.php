@@ -20,7 +20,7 @@ define('LOGIN', 'toto'); // Toto for ever
 if (!empty($_POST)) {
     // Sont-ils les mêmes que les constantes ?
     if ($_POST['loginname'] !== LOGIN) {
-        $errorMessage = 'Mauvais login !';
+        $errorMessage = 'Mauvais login ! Veuillez essayer avec toto !';
     } else {
         // On ouvre la session
         session_start();
@@ -73,6 +73,7 @@ if (!empty($_POST)) {
                 </div>
                 <div class="panel-footer ">
                     Don't have an account ? <a href="#" onClick="">Too bad !</a>
+                    <p><?= $errorMessage;?><p>
                 </div>
             </div>
         </div>

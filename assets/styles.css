@@ -69,3 +69,8 @@ section.cookies{
     height: 60px;
   }
 }
+
+.panel-footer p{
+  color: #F00;
+  font-weight: bold;
+}
